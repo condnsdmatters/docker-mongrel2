@@ -10,5 +10,5 @@ ADD default.conf /etc/mongrel2/default.conf
 RUN chmod 775 /usr/sbin/mongrel2-start
 RUN chown -R www-data /etc/mongrel2
 EXPOSE 8080 9999 9998
-ENTRYPOINT mongrel2-start
+ENTRYPOINT [ "mongrel2-start" ]
 CMD [ "main" ]
